@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    
+
+    "build:digitalocean": " npm install --production=false && npm run build && npm ci   ",
     "start": "node index.js",
     "start-watch": "nodemon index.js",
+    "install": "cd client && npm install",
     "dev": "concurrently \"npm run start-watch\" \"cd client && npm start\""
+
+   
+     
   },
   "keywords": [],
   "author": "",
